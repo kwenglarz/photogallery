@@ -1,0 +1,316 @@
+/* color palette
+#007d7b - teal
+#000000 - black
+#ffffff - white */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* END OF CSS RESET */
+
+
+* {
+    line-height: 1.5;
+}
+html {
+    background-color: #000;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+main {
+    background-color: #fff;
+}
+body {
+    margin: 0 auto;
+    max-width: 80%;
+}
+p {
+    font-size: 1.25em;
+    padding-bottom: 5px;
+}
+figcaption, label, input, small {
+    font-size: 1em;
+}
+header {
+    display: block;
+}
+article {
+    display: grid;
+}
+nav a {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+nav ul {
+    padding: 15px 0px;
+    margin: 0;
+}
+nav li {
+    list-style-type: none;
+    display: inline;
+    padding: 5px 10px;
+}
+nav a:hover {
+    background-color: #007d7b;
+}
+nav a:focus {
+    outline: 3px solid #007d7b;
+}
+.hidden {
+    display: none;
+}
+h1 {
+    font-size: 3em;
+    background-color: #fff;
+    color: #007d7b;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+img {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+figcaption {
+    position: relative;
+    text-align: center;
+}
+input:focus {
+    outline: 3px solid #007d7b;
+}
+#submit:focus {
+    outline: 3px solid #fff;
+}
+.top2 {
+    bottom: 580px;
+}
+.bottom {
+    top: -50px;
+}
+.white {
+    color: #fff;
+}
+[href="#top"] {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        border-radius: 10px 0 0px 0px;
+}
+[href="#top"]:hover {
+    background-color: #007d7b;
+}
+aside {
+    background-color: #000;
+    color: #fff;
+}
+aside p {
+    padding: 15px 0px 30px;
+    text-align: center;
+}
+::placeholder {
+    color: #007d7b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+form {
+    display: block;
+}
+label {
+    text-align: left;
+}
+input {
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+#submit {
+    background-color: #007d7b;
+    color: #fff;
+    width: 70%;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+#submit:hover {
+    background-color: #fff;
+    color: #007d7b;
+    cursor: pointer;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    color: #fff;
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+/* MEDIA QUERIES */
+ @media screen and (min-width: 485px) {
+    body {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    nav li {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        margin: 0 auto;
+    }
+    .gallery {
+        align-items: center;
+
+    }
+    h1 {
+        font-size: 2em;
+    }
+    input {
+        width: 100%;
+    }
+    .top {
+        bottom: 250px;
+    }
+    .top2 {
+        bottom: 550px;
+    }
+    .bottom {
+        top: -35px;
+    }
+} 
+
+@media screen and (min-width: 880px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 5px;
+        gap: 10px;
+        margin: auto;
+        align-items: start;
+    }
+    input{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+    label {
+        position: relative;
+        left: 10%;
+    }
+    #submit {
+        position: inherit;
+        width: 60%;
+    }
+    .top {
+        bottom: 230px;
+    }
+    .top2 {
+        bottom: 520px;
+    }
+    .bottom {
+        top: -40px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    nav li {
+        display: inline;
+    }
+    nav ul {
+        display: block;
+        text-align: right;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 0 5px;
+    }
+    input{
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+    label {
+        position: relative;
+        left: 10%;
+    }
+    #submit {
+        position: inherit;
+        width: 60%;
+    }
+    .top {
+        bottom: 230px;
+    }
+    .top2 {
+        bottom: 500px;
+    }
+    .bottom {
+        top: -50px;
+    }
+}
+
